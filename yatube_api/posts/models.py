@@ -43,7 +43,7 @@ class Follow(models.Model):
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        related_name='user',
+        related_name='follower',
     )
     following = models.ForeignKey(
         User,
